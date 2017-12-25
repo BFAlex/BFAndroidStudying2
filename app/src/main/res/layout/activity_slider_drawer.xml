@@ -1,0 +1,38 @@
+<?xml version="1.0" encoding="utf-8"?>
+<LinearLayout xmlns:android="http://schemas.android.com/apk/res/android"
+    android:orientation="vertical" android:layout_width="match_parent"
+    android:layout_height="match_parent">
+
+    <SlidingDrawer
+        android:id="@+id/slidingDrawer"
+        android:handle="@+id/sdHandle"
+        android:content="@+id/sdContent"
+        android:layout_width="match_parent"
+        android:layout_height="match_parent"
+        android:background="@color/colorTestView">
+
+        <Button
+            android:id="@id/sdHandle"
+            android:layout_width="match_parent"
+            android:layout_height="wrap_content"
+            android:text="handle"
+            android:background="@color/colorTestView2"/>
+
+        <LinearLayout
+            android:id="@id/sdContent"
+            android:layout_width="match_parent"
+            android:layout_height="match_parent"
+            android:background="@color/colorTestView3">
+
+            <TextView
+                android:layout_width="match_parent"
+                android:layout_height="match_parent"
+                android:text="滑动抽屉内容"
+                android:gravity="center"/>
+
+        </LinearLayout>
+
+    </SlidingDrawer>
+
+
+</LinearLayout>
